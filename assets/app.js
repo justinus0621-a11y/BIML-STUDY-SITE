@@ -3,7 +3,7 @@ const CONFIG = {
   apiUrl: '/api/notion',
   labHomepage: 'https://www.smu.ac.kr',            // 연구실 홈페이지 주소로 바꿔 주세요
   notionUrl: 'https://app.notion.com/p/420a77c9b52881008fd7f7f59ade1be0', // 노션 홈 주소
-  cacheMinutes: 5,                                  // 페이지 이동 시 다시 불러오지 않는 시간
+  cacheMinutes: 0.5,                                  // 페이지 이동 시 다시 불러오지 않는 시간
 };
 /* ================================================ */
 
