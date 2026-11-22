@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BIML STUDY</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="home">
+<header class="top" id="header"></header>
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">BIML · Study</div>
+    <h1>논문을 함께 읽고,<br />함께 성장합니다.</h1>
+    <p class="lead">윤희남 교수님 연구실(BIML) 구성원들이 격주로 논문을 리뷰하고 그 기록을 모아두는 공간입니다.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">누적 PR</div><div class="v" id="stPr">–</div><div class="s">편의 논문 리뷰</div></div>
+      <div class="stat"><div class="k">참여자</div><div class="v" id="stMem">–</div><div class="s">명이 함께해요</div></div>
+      <div class="stat"><div class="k">다음 PR 발표</div><div class="v" id="stNext">–</div><div class="s" id="stNextSub">일정 확인 중</div></div>
+    </div>
+  </div>
+</section>
+<div class="wrap"><div class="notice" id="notice" hidden></div></div>
+<section class="block">
+  <div class="wrap">
+    <div class="home-grid">
+      <div class="card"><h3>📅 다가오는 일정 <a href="schedule.html">전체 일정 →</a></h3><div id="homeUp"><div class="skeleton"></div></div></div>
+      <div class="card"><h3>📚 최근 PR <a href="library.html">PR 도서관 →</a></h3><div id="homePr"><div class="skeleton"></div></div></div>
+    </div>
+    <div class="quick">
+      <a class="card" href="about.html"><span>💌 About</span><b>스터디 소개</b></a>
+      <a class="card" href="schedule.html"><span>📅 Schedule</span><b>일정</b></a>
+      <a class="card" href="library.html"><span>🏛️ Library</span><b>PR 도서관</b></a>
+      <a class="card" href="members.html"><span>👤 Members</span><b>참여자</b></a>
+    </div>
+  </div>
+</section>
+<footer id="footer"></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

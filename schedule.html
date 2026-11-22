@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>일정 · BIML STUDY</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="schedule">
+<header class="top" id="header"></header>
+<section class="page-head"><div class="wrap"><h1>일정</h1><p>PR 발표와 연구실 일정을 함께 보여줍니다.</p></div></section>
+<div class="wrap"><div class="notice" id="notice" hidden></div></div>
+<section class="block">
+  <div class="wrap">
+    <div class="sched">
+      <div class="card cal">
+        <div class="cal-top">
+          <strong id="calTitle"></strong>
+          <div class="nav">
+            <button class="icon-btn" id="calPrev" aria-label="이전 달">‹</button>
+            <button class="icon-btn text" id="calToday">오늘</button>
+            <button class="icon-btn" id="calNext" aria-label="다음 달">›</button>
+          </div>
+        </div>
+        <div class="grid7" id="calGrid"></div>
+      </div>
+      <div class="card upcoming">
+        <h3>다가오는 일정</h3>
+        <div id="upList"><div class="skeleton"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer"></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
