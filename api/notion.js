@@ -151,7 +151,7 @@ export default async function handler(req, res) {
       { showFiles: process.env.PUBLIC_FILES === 'true' },
     );
     // 5분 동안 캐시 → 노션에 올린 내용은 최대 5분 안에 홈페이지에 반영됩니다.
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
+    res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate=30');
     res.status(200).json(data);
   } catch (err) {
     console.error(err);
